@@ -1,0 +1,46 @@
+<% include ../partials/head %>
+<div class="wrapper--flex">
+	<% include ../partials/header %>
+	<% include ../partials/nav %>
+</div>
+<main>
+	<section class="page">
+		<div class="gallery">
+            <img src="" alt="" class="gallery__large">			
+		</div>
+		<ul class="starlist">
+			<li class="star" id="one" data-rating="1">&#9733</li>
+			<li class="star" id="two" data-rating="2">&#9733</li>
+			<li class="star" id="three" data-rating="3">&#9733</li>
+			<li class="star" id="four" data-rating="4">&#9733</li>
+			<li class="star" id="five" data-rating="5">&#9733</li>
+		</ul>
+		<div class="rating-div">Gennemsnit <span class="placeholder"></span> stjerner</div>
+		<div class="rating-div">antal ratings <span class="placenumber"></span></div>
+		<a href="/vine">Tilbage til vine</a>
+		<h1></h1>
+		<p></p>
+		<p></p>
+		<table>
+			<tr>
+				<th>Land</th>
+				<td><span class="country"></span></td>
+			</tr>
+			<tr>
+				<th>Region</th>
+				<td><span class="region"></span></td>
+			</tr>
+			<tr>
+				<th>Pris</th>
+				<td><span class="price"></span></td>
+			</tr>
+		</table>
+	</section>
+</main>
+<template id="template">
+    <img src="" alt="" class="gallery__small">
+</template>
+
+<script src="/assets/javascript/fs-get-product.js" type="module"></script>
+
+<% include ../partials/after-footer %>
